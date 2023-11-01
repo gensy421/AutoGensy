@@ -34,7 +34,7 @@ class SettingsViewModel extends ChangeNotifier {
     _isDeveloperModeEnabled =
         await _prefsService.getBool('isDeveloperModeEnabled') ?? true;
     _baseURL = await _prefsService.getString('baseURL') ??
-        'http://127.0.0.1:8000/ap/v1';
+        'http://8.222.250.155:8000/ap/v1';
     _restApiUtility.updateBaseURL(_baseURL);
     _continuousModeSteps =
         await _prefsService.getInt('continuousModeSteps') ?? 10;
