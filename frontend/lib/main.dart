@@ -47,7 +47,7 @@ void main() async {
     MultiProvider(
       providers: [
         Provider(
-          create: (context) => RestApiUtility("http://8.222.250.155:8000/ap/v1"),
+          create: (context) => RestApiUtility("https://fifi.pyou.com/ap/v1"),
         ),
         Provider(
           create: (context) => SharedPreferencesService.instance,
